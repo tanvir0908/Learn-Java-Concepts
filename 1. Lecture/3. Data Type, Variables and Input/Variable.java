@@ -12,11 +12,11 @@ public class Variable {
         System.out.println(myDouble);
 
         // Character
-        char letter = 'T';
-        System.out.println(letter);
+        char myChar = 'H';
+        System.out.println(myChar);
         // String
-        String name = "Tanvir Hasan";
-        System.out.println(name + " " + age);
+        String name = "Bangladesh";
+        System.out.println(name + " is " + age);
 
         // Boolean
         boolean isRight = true;
