@@ -13,9 +13,9 @@ class GreatestNumber {
         System.out.print("Enter third number: ");
         int thirdNumber = input.nextInt();
 
-        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
             System.out.println("Greatest number is: " + firstNumber);
-        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+        } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             System.out.println("Greatest number is: " + secondNumber);
         } else {
             System.out.println("Greatest number is: " + thirdNumber);
