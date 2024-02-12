@@ -14,5 +14,6 @@ public class AllArithmaticOperator {
         System.out.println("The subtraction of " + number1 + " and " + number2 + " is " + (number1 - number2));
         System.out.println("The multiplication of " + number1 + " and " + number2 + " is " + (number1 * number2));
         System.out.println("The division of " + number1 + " and " + number2 + " is " + ((float) number1 / number2));
+        System.out.println("The modulus of " + number1 + " and " + number2 + " is " + (number1 % number2));
     }
 }
