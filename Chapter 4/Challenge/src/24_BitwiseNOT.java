@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
-class BitwiseAND {
+class BitwiseNOT {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
         int num1 = input.nextInt();
-        System.out.print("Enter another number: ");
-        int num2 = input.nextInt();
 
-        int result = num1 & num2;
+        int result = ~num1;
         System.out.println("The result is: " + result);
     }
 }

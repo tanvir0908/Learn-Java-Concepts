@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class BitwiseAND {
+class BitwiseXOR {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -9,7 +9,7 @@ class BitwiseAND {
         System.out.print("Enter another number: ");
         int num2 = input.nextInt();
 
-        int result = num1 & num2;
+        int result = num1 ^ num2;
         System.out.println("The result is: " + result);
     }
 }
