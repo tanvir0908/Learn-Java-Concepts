@@ -3,7 +3,7 @@ import java.util.Scanner;
 class ArmstrongNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
- 
+
         System.out.println("Armstrong Number Checker");
 
         System.out.print("Please enter a number: ");
@@ -25,8 +25,6 @@ class ArmstrongNumber {
             armstrongNumber += (int) Math.pow(digit, digitCount);
             number /= 10;
         }
-
-
         return armstrongNumber == numCopy;
     }
 
