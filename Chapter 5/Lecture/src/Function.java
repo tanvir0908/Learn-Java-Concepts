@@ -3,17 +3,17 @@ public class Function {
         System.out.println("First pattern: ");
         firstPattern();
 
-//        System.out.println("Second pattern: ");
-//        secondPattern();
-//
-//        System.out.println("Third pattern: ");
-//        thirdPattern();
+        System.out.println("Second pattern: ");
+        secondPattern();
+
+        System.out.println("Third pattern: ");
+        thirdPattern();
     }
 
     public static void firstPattern() {
 //      print pattern using loops
         int rows = 0;
-        while (rows <= 20) {
+        while (rows <= 4) {
             int starCount = 0;
             while (starCount <= rows) {
                 System.out.print("* ");
@@ -22,6 +22,7 @@ public class Function {
             System.out.println();
             rows++;
         }
+        System.out.println();
     }
 
     public static void secondPattern() {
