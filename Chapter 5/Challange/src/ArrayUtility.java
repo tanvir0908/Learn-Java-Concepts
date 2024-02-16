@@ -14,4 +14,11 @@ public class ArrayUtility {
         }
         return numbers;
     }
+
+    public static void printArray(int[] numbers) {
+        System.out.println("\nYour array is: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
 }
