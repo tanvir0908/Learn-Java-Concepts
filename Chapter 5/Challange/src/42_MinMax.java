@@ -4,10 +4,14 @@ class MinMax {
 
         int[] numbers = ArrayUtility.userInputArray();
 
+    if(numbers.length != 0){
         int minNumber = findMin(numbers);
         System.out.println("The minimum number is: " + minNumber);
         int maxNumber = findMax(numbers);
-        System.out.println("The minimum number is: " + maxNumber);
+        System.out.println("The maximum number is: " + maxNumber);
+    }else{
+        System.out.println("Calculating min max is not possible in empty array");
+    }
     }
 
     public static int findMin(int[] numbers) {
