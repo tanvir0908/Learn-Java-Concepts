@@ -42,4 +42,9 @@ public class Car {
     public float getCurrentFuelLevel() {
         return currentFuelInLiters;
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
 }
