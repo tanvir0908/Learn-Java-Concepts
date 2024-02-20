@@ -44,10 +44,8 @@ public class Switch {
                 System.out.println("This is Friday");
                 break;
             case (6):
-                System.out.println("This is Saturday");
-                break;
             case (7):
-                System.out.println("This is Sunday");
+                System.out.println("This is Holiday");
                 break;
             default:
                 System.out.println("Invalid number!");
