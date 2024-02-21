@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class MaxNumber {
+class MinNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -9,12 +9,12 @@ class MaxNumber {
         int num1 = input.nextInt();
         System.out.print("Enter another number: ");
         int num2 = input.nextInt();
-        int maxNumber = findMaxNumber(num1, num2);
-        System.out.println("The maximum number is: " + maxNumber);
+        int minNumber = findMinNumber(num1, num2);
+        System.out.println("The maximum number is: " + minNumber);
     }
 
-    public static int findMaxNumber(int num1, int num2) {
-        int maxNumber = num1 > num2 ? num1 : num2;
-        return maxNumber;
+    public static int findMinNumber(int num1, int num2) {
+        int minNumber = num1 < num2 ? num1 : num2;
+        return minNumber;
     }
 }
