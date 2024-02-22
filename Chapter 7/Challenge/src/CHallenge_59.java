@@ -6,10 +6,15 @@ class PasswordChecker {
 
         System.out.println("Welcome to Password Checker");
         String password;
+
         do {
-            System.out.print("Please enter your password: ");
+            System.out.print("Please enter a password: ");
             password = input.nextLine();
-        } while (password.length() < 8);
-        System.out.println("Your password is: " + password);
+        } while (!passwordChecker(password));
+        System.out.println("Thank you for entering a valid password!");
+    }
+
+    public static boolean passwordChecker(String password) {
+        return password.length() >= 6;
     }
 }
