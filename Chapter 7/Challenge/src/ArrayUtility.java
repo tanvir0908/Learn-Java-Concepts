@@ -8,6 +8,7 @@ public class ArrayUtility {
         int size = input.nextInt();
         int[] numbers = new int[size];
 
+        System.out.println();
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Please enter the value of " + (i + 1) + " element: ");
             int value = input.nextInt();
@@ -21,5 +22,6 @@ public class ArrayUtility {
         for (int number : numbers) {
             System.out.print(number + " ");
         }
+        System.out.println();
     }
 }
