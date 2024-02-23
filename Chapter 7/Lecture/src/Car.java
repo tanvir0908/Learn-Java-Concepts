@@ -17,14 +17,15 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "noOfWheels=" + noOfWheels +
-                ", numberOfDoors=" + numberOfDoors +
-                ", maxSpeed=" + maxSpeed +
-                ", name='" + name + '\'' +
-                ", modelNumber='" + modelNumber + '\'' +
-                ", manufacturer='" + manufacturer + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("Car{");
+        sb.append("noOfWheels=").append(noOfWheels);
+        sb.append(", numberOfDoors=").append(numberOfDoors);
+        sb.append(", maxSpeed=").append(maxSpeed);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", modelNumber='").append(modelNumber).append('\'');
+        sb.append(", manufacturer='").append(manufacturer).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     public static void main(String[] args) {
