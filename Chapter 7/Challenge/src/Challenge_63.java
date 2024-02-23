@@ -4,20 +4,10 @@ class MaxValue {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Please enter the size of the array: ");
-        int size = input.nextInt();
-        int[] numbers = new int[size];
-
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print("Please enter the value of " + (i + 1) + " element: ");
-            int value = input.nextInt();
-            numbers[i] = value;
-        }
-
-        System.out.println("Your entered array is: ");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
+        // Take array as user input
+        int[] numbers = ArrayUtility.inputArray();
+        // Display user entered array
+        ArrayUtility.displayArray(numbers);
 
         int maxValue = findMaxValue(numbers);
         System.out.println("\n\nThe maximum value in the array is: " + maxValue);
