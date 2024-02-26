@@ -1,0 +1,4 @@
+package accessmodifier;
+
+class Default {
+}
