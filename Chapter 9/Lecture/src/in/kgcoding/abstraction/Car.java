@@ -6,4 +6,11 @@ public class Car extends Vehicle {
     public Car() {
         super(4);
     }
+
+    @Override
+    public void start() {
+        System.out.println("The car is started...");
+    }
+
+
 }

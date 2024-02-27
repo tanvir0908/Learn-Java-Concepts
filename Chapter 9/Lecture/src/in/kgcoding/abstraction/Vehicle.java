@@ -1,7 +1,8 @@
 package in.kgcoding.abstraction;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Transport {
     private int numberOfTires;
+
 
     public Vehicle(int numberOfTires) {
         this.numberOfTires = numberOfTires;
@@ -15,7 +16,14 @@ public abstract class Vehicle {
         this.numberOfTires = numberOfTires;
     }
 
-    public void start() {
-        System.out.println("The vehicle is started...");
+    public void commute() {
+        System.out.println("The vehicle is commuting...");
+    }
+
+    public abstract void start();
+
+    @Override
+    public void getSetGo() {
+        System.out.println("Going to haven...");
     }
 }
