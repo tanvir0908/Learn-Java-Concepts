@@ -14,6 +14,7 @@ import java.io.IOException;
 public class KgCodingReader {
     public static void main(String[] args) {
         String fileName = "java-course.txt";
+//        String fileName = "C:/Users/tanvi/Desktop/file.txt";
 
         try (FileReader reader = new FileReader(fileName)) {
             int readChar = 0;
