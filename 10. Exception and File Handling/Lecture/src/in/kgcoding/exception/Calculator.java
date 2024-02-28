@@ -17,7 +17,8 @@ public class Calculator {
             System.out.printf("Result: %d", result);
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
-            throw exception;
+        } finally {
+            System.out.println("\nThis is the final block");
         }
 
 

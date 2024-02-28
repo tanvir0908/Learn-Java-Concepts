@@ -10,14 +10,14 @@ public class ThrowException {
         int age = input.nextInt();
         try {
             validateAge(age);
-        } catch (IllegalArgumentException e) {
+        } catch (Exception e) {
             System.out.println("Exception caught: " + e.getMessage());
         }
     }
 
-    public static void validateAge(int age) {
+    public static void validateAge(int age) throws Exception {
         if (age < 18) {
-            throw new IllegalArgumentException("Age");
+            throw new Exception("Age");
         }
     }
 }
