@@ -4,10 +4,10 @@ import java.util.Collection;
 import java.util.Objects;
 
 public class Utility {
-    public static void displayCollection(Collection collection) {
+    public static <E> void displayCollection(Collection<E> collection) {
         System.out.print("Collection is: ");
-        for (Object coll : collection) {
-            System.out.printf("%s ", coll);
+        for (E coll : collection) {
+            System.out.printf("%s ", coll.toString());
         }
         System.out.println();
     }

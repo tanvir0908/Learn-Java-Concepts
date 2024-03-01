@@ -19,16 +19,19 @@ public class TestingList {
         // remove data from 0 index
         strList.remove(1);
 
+        // check exists in a list
         if (strList.contains("Jannat")) {
             System.out.println("Tanvir exist");
             System.out.println(strList.indexOf("Emon"));
         }
 
-//        for (int i = 0; i < strList.size(); i++) {
-//            System.out.print(strList.get(i) + " ");
-//        }
+        // list iteration using for loop
+        for (int i = 0; i < strList.size(); i++) {
+            System.out.print(strList.get(i) + " ");
+        }
 
-        for(String name: strList){
+        // list iteration using for each loop
+        for (String name : strList) {
             System.out.println(name);
         }
     }

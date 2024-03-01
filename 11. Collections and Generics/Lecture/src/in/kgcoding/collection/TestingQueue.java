@@ -9,17 +9,19 @@ public class TestingQueue {
         Queue<Integer> queue = new LinkedList<>();
 
         // insert values into queue
-        queue.add(1); // it will throw exception
+        queue.add(10); // it will throw exception
         queue.offer(2); // it will return false
+
         Utility.displayCollection(queue);
 
-        System.out.println(queue.peek());
-        System.out.println(queue.element());
+        // check first element
+        System.out.println(queue.peek()); // it will throw exception
+        System.out.println(queue.element()); // it will return false
 
-        System.out.println(queue.remove());
-        System.out.println(queue.poll());
+        // remove element from queue
+        System.out.println(queue.remove()); // it will throw exception
+        System.out.println(queue.poll()); // it will return null
+
         Utility.displayCollection(queue);
-
-        System.out.println(queue.poll());
     }
 }
