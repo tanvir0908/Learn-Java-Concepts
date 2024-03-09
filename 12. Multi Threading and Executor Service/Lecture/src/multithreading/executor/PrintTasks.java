@@ -1,4 +1,4 @@
-package multithreading.runnable;
+package multithreading.executor;
 
 public class PrintTasks implements Runnable {
     private final char targetChar;
