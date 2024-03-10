@@ -1,9 +1,6 @@
 package challenge104;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class Executor {
     public static void main(String[] args) {
@@ -25,6 +22,12 @@ public class Executor {
             System.out.println(f3.get());
             System.out.println(f4.get());
             System.out.println(f5.get());
+
+            service.shutdown();
+
+            if (!service.awaitTermination(10, TimeUnit.SECONDS)) {
+                service.shutdownNow();
+            }
         } catch (ExecutionException | InterruptedException e) {
             throw new RuntimeException(e);
         }
